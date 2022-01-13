@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.middle-section {
+  width: 400px;
+  height: 400px;
+  padding: 2rem;
+}
+
+.height {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+
+.one {
+  width: 90px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.orange {
+  background-color: orange;
+  width: 100%;
+  height: 25%;
+  border-radius: 3rem;
+}
+
+.two {
+  width: 90px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.pink {
+  background-color: pink;
+  width: 100%;
+  height: 25%;
+  border-radius: 3rem;
+}
+
+.width {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+  bottom: 338px;
+}
+
+.three {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.yellow {
+  background-color: yellow;
+  width: 25%;
+  height: 100%;
+  border-radius: 3rem;
+  z-index: 100;
+}
+
+.four {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.green {
+  background-color: green;
+  width: 25%;
+  height: 100%;
+  border-radius: 3rem;
+  
+}
+
+.trackbtn
+{
+
+    animation: example 3s linear infinite alternate;
+    animation-play-state: paused;
+
+}
+
+.trackbtn2
+{
+    animation: example2 3s linear infinite alternate;
+    animation-play-state: paused;
+}
+
+
+
+/* btn style */
+.animationBtn button {
+    height: 50px;
+    width: 100px;
+    border-radius: 1rem;
+    border: 2px solid green;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* animation css */
+
+@keyframes example {
+  0% {
+    width: 25%;
+  }
+  25% {
+    width: 50%;
+    background-color: pink;
+  }
+  50% {
+    width: 60%;
+    background-color: green;
+  }
+  75% {
+    width: 75%;
+    background-color: yellow;
+  }
+  100% {
+    width: 100%;
+    background-color: orange;
+  }
+}
+
+@keyframes example2 {
+    0% {
+        height: 25%;
+      }
+      25% {
+        height: 50%;
+        background-color: orange;
+      }
+      50% {
+        height: 60%;
+        background-color: yellow;
+      }
+      75% {
+        height: 75%;
+        background-color: green;
+      }
+      100% {
+        height: 100%;
+        background-color: pink;
+      }
+}
